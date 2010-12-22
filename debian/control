@@ -1,0 +1,15 @@
+Source: ipaddr
+Section: python
+Priority: extra
+Maintainer: SimpleGeo Nerds <nerds@simplegeo.com>
+Uploaders: Zooko Ofsimplegeo <zooko@simplegeo.com>
+Build-Depends: cdbs, debhelper (>= 7), python, python-support
+Standards-Version: 3.8.4
+Homepage: http://code.google.com/p/ipaddr-py/
+
+Package: python-ipaddr
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Python IP address manipulation library
+ An IPv4/IPv6 manipulation library in Python. This library is used to
+ create/poke/manipulate IPv4 and IPv6 addresses and prefixes.
