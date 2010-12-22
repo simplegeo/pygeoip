@@ -1,3 +1,16 @@
+python-ipaddr (2.1.5.0) lucid; urgency=low
+
+  [ Zooko Ofsimplegeo ]
+  * version = 2.1.5.post1
+  * version = 2.1.5.1
+  * don't import ipaddr from setup.py, instead parse a _version.py file
+  * fix missing import in setup.py
+  * source name = python-ipaddr
+
+  [ SimpleGeo Nerds ]
+
+ -- SimpleGeo Nerds <nerds@simplegeo.com>  Wed, 22 Dec 2010 14:18:03 +0000
+
 python-ipaddr (2.1.5-2sg0) unstable; urgency=low
 
   * SimpleGeoized.
