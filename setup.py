@@ -15,6 +15,7 @@
 # limitations under the License.
 
 from distutils.core import setup
+import os, re
 
 PKG='ipaddr'
 VERSIONFILE = os.path.join('_version.py')
