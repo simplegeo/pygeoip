@@ -1,4 +1,4 @@
-Source: ipaddr
+Source: python-ipaddr
 Section: python
 Priority: extra
 Maintainer: SimpleGeo Nerds <nerds@simplegeo.com>

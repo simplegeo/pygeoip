@@ -40,7 +40,7 @@ else:
         averstr = ''
     verstr = '.'.join([mverstr, averstr])
 
-setup(name='ipaddr',
+setup(name=PKG,
       maintainer='Google',
       maintainer_email='ipaddr-py-dev@googlegroups.com',
       version=verstr,
