@@ -22,7 +22,7 @@ and networks.
 
 """
 
-__version__ = '2.1.5.post1'
+__version__ = '2.1.5.1'
 
 import struct
 
