@@ -16,13 +16,33 @@
 
 from distutils.core import setup
 
-import ipaddr
-
+PKG='ipaddr'
+VERSIONFILE = os.path.join('_version.py')
+verstr = "unknown"
+try:
+    verstrline = open(VERSIONFILE, "rt").read()
+except EnvironmentError:
+    pass # Okay, there is no version file.
+else:
+    MVSRE = r"^manual_verstr *= *['\"]([^'\"]*)['\"]"
+    mo = re.search(MVSRE, verstrline, re.M)
+    if mo:
+        mverstr = mo.group(1)
+    else:
+        print "unable to find version in %s" % (VERSIONFILE,)
+        raise RuntimeError("if %s.py exists, it must be well-formed" % (VERSIONFILE,))
+    AVSRE = r"^auto_build_num *= *['\"]([^'\"]*)['\"]"
+    mo = re.search(AVSRE, verstrline, re.M)
+    if mo:
+        averstr = mo.group(1)
+    else:
+        averstr = ''
+    verstr = '.'.join([mverstr, averstr])
 
 setup(name='ipaddr',
       maintainer='Google',
       maintainer_email='ipaddr-py-dev@googlegroups.com',
-      version=ipaddr.__version__,
+      version=verstr,
       url='http://code.google.com/p/ipaddr-py/',
       license='Apache License, Version 2.0',
       classifiers=[
